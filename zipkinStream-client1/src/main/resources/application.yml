@@ -1,0 +1,13 @@
+server:
+  port: 8803
+spring:
+  application:
+    name: zipkinStream-client1
+  zipkin:
+    base-url: http://localhost:8801
+  rabbitmq:
+      host: 192.168.2.201
+      port: 5672
+      username: admin
+      password: admin
+

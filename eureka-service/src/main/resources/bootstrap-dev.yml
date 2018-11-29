@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5 #心跳检测,防止一段时间没有被调用,被eureka任务服务泵机而剔除(好像没用)
+    lease-expiration-duration-in-seconds: 10 #服务时效时间,服务取消注册后,剔除服务(好像没用)
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false   #false表示eureka本身不注册上,true表示本身注册上
+    fetchRegistry: false    #因为eureka本身是负责维护服务的,所有设置不需要检索服务
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000

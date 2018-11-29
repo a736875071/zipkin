@@ -1,0 +1,27 @@
+server:
+  port: 8801
+zipkin:
+  storage:
+    type: mysql
+spring:
+  application:
+    name : zipkinStream-server
+  rabbitmq:
+    host: 192.168.2.201
+    port: 5672
+    username: admin
+    password: admin
+  sleuth:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    initialize: true
+    continue-on-error: true
+
+
+
+
+

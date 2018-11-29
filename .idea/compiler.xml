@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="zipkinStream-client1" />
+        <module name="zipkinStream-client2" />
+        <module name="zipkinStream-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-service" target="1.8" />
+      <module name="microservice-zipkin-client" target="1.6" />
+      <module name="microservice-zipkin-client-backend" target="1.6" />
+      <module name="userInfoService" target="1.8" />
+      <module name="userInfoService1" target="1.8" />
+      <module name="ZipkinServer" target="1.8" />
+      <module name="zipkinStream-client1" target="1.6" />
+      <module name="zipkinStream-client2" target="1.6" />
+      <module name="zipkinStream-server" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
